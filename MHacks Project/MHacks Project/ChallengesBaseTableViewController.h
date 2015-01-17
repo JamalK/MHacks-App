@@ -8,11 +8,13 @@
 
 #import <UIKit/UIKit.h>
 #import "Challenge.h"
+#import <ParseUI/ParseUI.h>
+#import "ChallengeCell.h"
 
-@interface ChallengesBaseTableViewController : UITableViewController
+@interface ChallengesBaseTableViewController : PFQueryTableViewController
 
 
-- (void)configureCell:(UITableViewCell *)cell WithChallenge:(Challenge *)challenge ;
+- (void)configureCell:(ChallengeCell *)cell WithChallenge:(Challenge *)challenge ;
 
 
 

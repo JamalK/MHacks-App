@@ -8,8 +8,9 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#import <Parse/Parse.h>
 
-@interface Organization : NSObject
+@interface Organization : PFObject <PFSubclassing>
 
 @property (nonatomic, strong) NSString *name ;
 @property (nonatomic, strong) UIImage  *logo ;

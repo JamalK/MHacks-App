@@ -10,4 +10,10 @@
 
 @implementation Organization
 
+@dynamic name,logo,mission, address ;
+
++(NSString *)parseClassName {
+    return @"Organization" ;
+}
+
 @end

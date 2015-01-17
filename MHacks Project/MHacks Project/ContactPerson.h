@@ -7,8 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <Parse/Parse.h>
 
-@interface ContactPerson : NSObject
+@interface ContactPerson : PFObject <PFSubclassing>
 
 @property (nonatomic, strong) NSString *name ;
 @property (nonatomic, strong) NSString *phoneNumber ;

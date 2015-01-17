@@ -7,6 +7,11 @@
 //
 
 #import "AppDelegate.h"
+#import <Parse/Parse.h>
+#import "User.h"
+#import "ContactPerson.h"
+#import "Organization.h"
+#import "Challenge.h"
 
 @interface AppDelegate ()
 
@@ -16,8 +21,22 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    [self registerSubcalsses];
+    
+    [Parse setApplicationId:@"X5oApp3keh2OpRYR8cDIuAQcZlOne8I8CLy2pkBk"
+                  clientKey:@"2m3s2u9Ip943XH9FwWvXvCCMNW2t7zvJXrh3NEbL"];
+    
+    [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
+ 
+    
     return YES;
+}
+
+- (void)registerSubcalsses {
+    [Challenge registerSubclass];
+    [Organization registerSubclass];
+    [ContactPerson registerSubclass];
+    [User registerSubclass];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

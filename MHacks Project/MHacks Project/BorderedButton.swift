@@ -8,6 +8,8 @@
 
 import UIKit
 
+@objc
+
 @IBDesignable class UIBorderedButton : UIButton {
     
     @IBInspectable var cornerRadius : CGFloat = 0.0 {
@@ -78,3 +80,4 @@ import UIKit
     }
     
 }
+

@@ -10,4 +10,10 @@
 
 @implementation Challenge
 
+@dynamic title,leader,location,date,completed, worth, limit,  details,organizer ;
+
++(NSString *)parseClassName {
+    return @"Challenge" ;
+}
+
 @end

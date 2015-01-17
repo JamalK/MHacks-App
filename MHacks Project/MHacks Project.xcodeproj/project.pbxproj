@@ -10,6 +10,21 @@
 		890DAFD01A6A262B0003D775 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 890DAFCF1A6A262B0003D775 /* LoginViewController.m */; };
 		890DAFD31A6A26B40003D775 /* BorderedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890DAFD21A6A26B40003D775 /* BorderedButton.swift */; };
 		890DAFD61A6A2A1E0003D775 /* LoginFieldViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 890DAFD51A6A2A1E0003D775 /* LoginFieldViewController.m */; };
+		890DAFDA1A6A2D6F0003D775 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 890DAFD71A6A2D6F0003D775 /* Bolts.framework */; };
+		890DAFDB1A6A2D6F0003D775 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 890DAFD81A6A2D6F0003D775 /* Parse.framework */; };
+		890DAFDC1A6A2D6F0003D775 /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 890DAFD91A6A2D6F0003D775 /* ParseUI.framework */; };
+		890DAFDE1A6A2DB50003D775 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 890DAFDD1A6A2DB50003D775 /* AudioToolbox.framework */; };
+		890DAFE01A6A2DBC0003D775 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 890DAFDF1A6A2DBC0003D775 /* CFNetwork.framework */; };
+		890DAFE21A6A2DCB0003D775 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 890DAFE11A6A2DCB0003D775 /* CoreGraphics.framework */; };
+		890DAFE41A6A2DDC0003D775 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 890DAFE31A6A2DDC0003D775 /* MobileCoreServices.framework */; };
+		890DAFE61A6A2DE30003D775 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 890DAFE51A6A2DE30003D775 /* QuartzCore.framework */; };
+		890DAFE81A6A2DEA0003D775 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 890DAFE71A6A2DEA0003D775 /* Security.framework */; };
+		890DAFEA1A6A2DF20003D775 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 890DAFE91A6A2DF20003D775 /* StoreKit.framework */; };
+		890DAFEC1A6A2DFD0003D775 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 890DAFEB1A6A2DFD0003D775 /* SystemConfiguration.framework */; };
+		890DAFEE1A6A2E060003D775 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 890DAFED1A6A2E060003D775 /* libz.dylib */; };
+		890DAFF01A6A2E120003D775 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 890DAFEF1A6A2E120003D775 /* libsqlite3.dylib */; };
+		890DAFF41A6A2EE80003D775 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 890DAFF31A6A2EE80003D775 /* User.m */; };
+		890DAFF71A6A32AC0003D775 /* ChallengesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 890DAFF61A6A32AC0003D775 /* ChallengesTableViewController.m */; };
 		8911EC831A69F8F00044530F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8911EC821A69F8F00044530F /* main.m */; };
 		8911EC861A69F8F00044530F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8911EC851A69F8F00044530F /* AppDelegate.m */; };
 		8911EC891A69F8F00044530F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8911EC881A69F8F00044530F /* ViewController.m */; };
@@ -47,6 +62,23 @@
 		890DAFD21A6A26B40003D775 /* BorderedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BorderedButton.swift; sourceTree = "<group>"; };
 		890DAFD41A6A2A1E0003D775 /* LoginFieldViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginFieldViewController.h; sourceTree = "<group>"; };
 		890DAFD51A6A2A1E0003D775 /* LoginFieldViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginFieldViewController.m; sourceTree = "<group>"; };
+		890DAFD71A6A2D6F0003D775 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		890DAFD81A6A2D6F0003D775 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		890DAFD91A6A2D6F0003D775 /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseUI.framework; sourceTree = "<group>"; };
+		890DAFDD1A6A2DB50003D775 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		890DAFDF1A6A2DBC0003D775 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		890DAFE11A6A2DCB0003D775 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		890DAFE31A6A2DDC0003D775 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		890DAFE51A6A2DE30003D775 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		890DAFE71A6A2DEA0003D775 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		890DAFE91A6A2DF20003D775 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		890DAFEB1A6A2DFD0003D775 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		890DAFED1A6A2E060003D775 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		890DAFEF1A6A2E120003D775 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		890DAFF21A6A2EE80003D775 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		890DAFF31A6A2EE80003D775 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		890DAFF51A6A32AC0003D775 /* ChallengesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChallengesTableViewController.h; sourceTree = "<group>"; };
+		890DAFF61A6A32AC0003D775 /* ChallengesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChallengesTableViewController.m; sourceTree = "<group>"; };
 		8911EC7D1A69F8F00044530F /* MHacks Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MHacks Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8911EC811A69F8F00044530F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8911EC821A69F8F00044530F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -84,7 +116,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				890DAFF01A6A2E120003D775 /* libsqlite3.dylib in Frameworks */,
+				890DAFEE1A6A2E060003D775 /* libz.dylib in Frameworks */,
+				890DAFEC1A6A2DFD0003D775 /* SystemConfiguration.framework in Frameworks */,
+				890DAFEA1A6A2DF20003D775 /* StoreKit.framework in Frameworks */,
+				890DAFE81A6A2DEA0003D775 /* Security.framework in Frameworks */,
+				890DAFE61A6A2DE30003D775 /* QuartzCore.framework in Frameworks */,
+				890DAFE41A6A2DDC0003D775 /* MobileCoreServices.framework in Frameworks */,
+				890DAFE21A6A2DCB0003D775 /* CoreGraphics.framework in Frameworks */,
+				890DAFE01A6A2DBC0003D775 /* CFNetwork.framework in Frameworks */,
+				890DAFDE1A6A2DB50003D775 /* AudioToolbox.framework in Frameworks */,
+				890DAFDA1A6A2D6F0003D775 /* Bolts.framework in Frameworks */,
 				8911ECAF1A69FC100044530F /* GameKit.framework in Frameworks */,
+				890DAFDC1A6A2D6F0003D775 /* ParseUI.framework in Frameworks */,
+				890DAFDB1A6A2D6F0003D775 /* Parse.framework in Frameworks */,
 				8911ECAD1A69FC080044530F /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -99,11 +144,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		890DAFF11A6A2E1A0003D775 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				890DAFEF1A6A2E120003D775 /* libsqlite3.dylib */,
+				890DAFED1A6A2E060003D775 /* libz.dylib */,
+				890DAFEB1A6A2DFD0003D775 /* SystemConfiguration.framework */,
+				890DAFE91A6A2DF20003D775 /* StoreKit.framework */,
+				890DAFE71A6A2DEA0003D775 /* Security.framework */,
+				890DAFE51A6A2DE30003D775 /* QuartzCore.framework */,
+				890DAFE31A6A2DDC0003D775 /* MobileCoreServices.framework */,
+				890DAFE11A6A2DCB0003D775 /* CoreGraphics.framework */,
+				890DAFDF1A6A2DBC0003D775 /* CFNetwork.framework */,
+				890DAFDD1A6A2DB50003D775 /* AudioToolbox.framework */,
+				890DAFD71A6A2D6F0003D775 /* Bolts.framework */,
+				890DAFD81A6A2D6F0003D775 /* Parse.framework */,
+				890DAFD91A6A2D6F0003D775 /* ParseUI.framework */,
+				8911ECAE1A69FC100044530F /* GameKit.framework */,
+				8911ECAC1A69FC080044530F /* CoreLocation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8911EC741A69F8F00044530F = {
 			isa = PBXGroup;
 			children = (
-				8911ECAE1A69FC100044530F /* GameKit.framework */,
-				8911ECAC1A69FC080044530F /* CoreLocation.framework */,
+				890DAFF11A6A2E1A0003D775 /* Frameworks */,
 				8911EC7F1A69F8F00044530F /* MHacks Project */,
 				8911EC991A69F8F00044530F /* MHacks ProjectTests */,
 				8911EC7E1A69F8F00044530F /* Products */,
@@ -129,6 +195,8 @@
 				8911EC871A69F8F00044530F /* ViewController.h */,
 				8911EC881A69F8F00044530F /* ViewController.m */,
 				8911EC8A1A69F8F00044530F /* Main.storyboard */,
+				890DAFF51A6A32AC0003D775 /* ChallengesTableViewController.h */,
+				890DAFF61A6A32AC0003D775 /* ChallengesTableViewController.m */,
 				890DAFD41A6A2A1E0003D775 /* LoginFieldViewController.h */,
 				890DAFD51A6A2A1E0003D775 /* LoginFieldViewController.m */,
 				890DAFD21A6A26B40003D775 /* BorderedButton.swift */,
@@ -178,6 +246,8 @@
 		8911ECB31A69FD330044530F /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				890DAFF21A6A2EE80003D775 /* User.h */,
+				890DAFF31A6A2EE80003D775 /* User.m */,
 				8911ECB41A69FE2B0044530F /* ContactPerson.h */,
 				8911ECB51A69FE2B0044530F /* ContactPerson.m */,
 				8911ECA91A69FB5B0044530F /* Challenge.h */,
@@ -300,6 +370,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8911ECBC1A6A01CA0044530F /* OrganizationDetailTableViewController.m in Sources */,
+				890DAFF71A6A32AC0003D775 /* ChallengesTableViewController.m in Sources */,
 				8911ECC31A6A089A0044530F /* ChallengeCell.m in Sources */,
 				890DAFD31A6A26B40003D775 /* BorderedButton.swift in Sources */,
 				8911ECB21A69FD260044530F /* Organization.m in Sources */,
@@ -307,6 +378,7 @@
 				8911ECAB1A69FB5B0044530F /* Challenge.m in Sources */,
 				8911EC861A69F8F00044530F /* AppDelegate.m in Sources */,
 				890DAFD61A6A2A1E0003D775 /* LoginFieldViewController.m in Sources */,
+				890DAFF41A6A2EE80003D775 /* User.m in Sources */,
 				8911ECB91A6A00040044530F /* ChallengeDetailTableViewController.m in Sources */,
 				8911ECA81A69FB4B0044530F /* ChallengesBaseTableViewController.m in Sources */,
 				8911EC831A69F8F00044530F /* main.m in Sources */,
@@ -434,6 +506,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "MHacks Project/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -447,6 +523,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "MHacks Project/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";

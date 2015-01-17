@@ -10,4 +10,11 @@
 
 @implementation ContactPerson
 
+@dynamic name,email,phoneNumber ;
+
+
++(NSString *)parseClassName {
+    return @"ContactPerson" ;
+}
+
 @end

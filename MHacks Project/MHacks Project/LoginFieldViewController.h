@@ -7,7 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MHacks_Project-swift.h"
 
 @interface LoginFieldViewController : UIViewController
+
+
+@property (weak, nonatomic) IBOutlet JKCustomTextField *usernameField;
+@property (weak, nonatomic) IBOutlet JKCustomTextField *passwordField;
+- (IBAction)loginButtonTapped:(id)sender;
+
+@property (weak, nonatomic) IBOutlet UIButton *loginButton;
 
 @end

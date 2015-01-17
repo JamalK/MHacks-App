@@ -7,7 +7,26 @@
 //
 
 #import "LoginFieldViewController.h"
+#import <Parse/Parse.h>
+#import "User.h"
 
-@implementation LoginFieldViewController
+@implementation LoginFieldViewController 
 
+
+-(void)viewDidLoad {
+    [super viewDidLoad];
+}
+
+-(void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+}
+
+- (IBAction)loginButtonTapped:(id)sender {
+    [User logInWithUsernameInBackground:_usernameField.text password:_passwordField.text block:^(PFUser *user, NSError *error) {
+        if (!error) {
+            [self performSegueWithIdentifier:@"login" sender:self];
+        }
+    }];
+    
+}
 @end

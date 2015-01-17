@@ -7,6 +7,7 @@
 //
 
 #import "ChallengesBaseTableViewController.h"
+#import "ChallengeCell.h"
 
 @interface ChallengesBaseTableViewController ()
 
@@ -24,8 +25,9 @@
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
--(void)configureCell:(UITableViewCell *)cell WithChallenge:(Challenge *)challenge {
-    
+-(void)configureCell:(ChallengeCell *)cell WithChallenge:(Challenge *)challenge {
+    cell.mainLabel.text = challenge.title ;
+    cell.detailLabel.text = challenge.details ;
 }
 
 - (void)didReceiveMemoryWarning {
