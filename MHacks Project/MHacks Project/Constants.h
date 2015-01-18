@@ -11,6 +11,10 @@
 
 
 #define ChallengeCellIdentifier @"ChallengeCell"
+#define MapCellIdentifier   @"MapCell"
+#define ContactCellIdentfier @"ContactCell"
+#define DetailsCellIdentifer @"DetailsCell"
+#define UserInfoCellIdentifier @"UserInfoCell" 
 
 
 

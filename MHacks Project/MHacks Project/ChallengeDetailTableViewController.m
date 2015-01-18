@@ -7,22 +7,66 @@
 //
 
 #import "ChallengeDetailTableViewController.h"
-
-@interface ChallengeDetailTableViewController ()
+#import "Constants.h"
+#import "MapCell.h"
+#import "ContactCell.h"
+#import "DetailsCell.h"
+#import "CLLocation+CLLLocation_Address.h"
+#import <MapKit/MapKit.h>
+#import <GameKit/GameKit.h>
+#import <DateTools.h>
+@interface ChallengeDetailTableViewController () {
+    UIBarButtonItem *flipButton ;
+}
 
 @end
 
 @implementation ChallengeDetailTableViewController
 
+-(instancetype)initWithChallenge:(Challenge *)challenge {
+    self = [super init];
+    if (self) {
+        self.challenge = challenge ;
+    }
+    return self ;
+}
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
+    flipButton = [[UIBarButtonItem alloc]
+                                   initWithTitle:@"Participate"
+                                   style:UIBarButtonItemStyleDone
+                                   target:self
+                                   action:@selector(flipView)];
+    flipButton.tintColor = [UIColor whiteColor];
+    self.navigationItem.rightBarButtonItem = flipButton;
     
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    [self.tableView registerNib:[UINib nibWithNibName:@"MapCell" bundle:[NSBundle mainBundle]] forCellReuseIdentifier:MapCellIdentifier];
+    [self.tableView registerNib:[UINib nibWithNibName:@"ContactCell" bundle:[NSBundle mainBundle]] forCellReuseIdentifier:ContactCellIdentfier];
+    [self.tableView registerNib:[UINib nibWithNibName:@"DetailsCell" bundle:[NSBundle mainBundle]] forCellReuseIdentifier:DetailsCellIdentifer];
 }
+
+
+- (void)flipView {
+    
+    GKAchievement *levelAchievement = [[GKAchievement alloc]initWithIdentifier:@"ChallengeCompleted"];
+    levelAchievement.percentComplete = 100 ;
+    
+    NSArray *achievements = @[levelAchievement];
+    
+    [GKAchievement reportAchievements:achievements withCompletionHandler:^(NSError *error) {
+        if (!error) {
+            [[[UIAlertView alloc]initWithTitle:@"Success!" message:@"You just earned 10 points!" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil]show ];
+            [self.navigationController popViewControllerAnimated:YES];
+        }
+        else {
+            NSLog(@"error:%@",error.localizedDescription);
+        }
+    }];
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -30,28 +74,60 @@
 }
 
 #pragma mark - Table view data source
-
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Potentially incomplete method implementation.
-    // Return the number of sections.
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete method implementation.
-    // Return the number of rows in the section.
-    return 0;
+    return 2;
 }
 
-/*
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+    if (indexPath.row == 0) {
+        DetailsCell *cell = [tableView dequeueReusableCellWithIdentifier:DetailsCellIdentifer];
+        cell.titleLabel.text = _challenge.title ;
+        cell.detailsLabel.text = _challenge.details ;
+        cell.attendeesLabel.text = [NSString stringWithFormat:@"%@/%@",_challenge.volunteers,_challenge.limit];
+        cell.timeandLocationLabel.text = [NSString stringWithFormat:@"%@",_challenge.date];
+        
+        CLLocation *location = [[CLLocation alloc]initWithLatitude:_challenge.location.latitude longitude:_challenge.location.longitude];
+        
+        [location address:^(NSString *result) {
+            cell.addressLabel.text = result ;
+        }];
+        
+        return cell ;
+    }
+    else if (indexPath.row == 1) {
+        MapCell *mapCell = [tableView dequeueReusableCellWithIdentifier:MapCellIdentifier];
+        MKPointAnnotation *annotation = [[MKPointAnnotation alloc] init];
+        annotation.title = @"Location" ;
+        annotation.coordinate = CLLocationCoordinate2DMake(_challenge.location.latitude, _challenge.location.longitude);
+        [mapCell.mapView addAnnotation:annotation];
+        [mapCell.mapView setRegion:MKCoordinateRegionMake(annotation.coordinate, MKCoordinateSpanMake(2, 2)) animated:YES];
+        
+        return mapCell ;
+    }
+    
+    return nil ;
     
     // Configure the cell...
     
-    return cell;
+//    return cell;
 }
-*/
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [self.tableView deselectRowAtIndexPath:indexPath animated:YES];
+}
+
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    if (indexPath.row == 0) {
+        return 298 ;
+    }
+    return 168 ;
+}
+
 
 /*
 // Override to support conditional editing of the table view.
@@ -97,4 +173,6 @@
 }
 */
 
+- (IBAction)participateTapped:(id)sender {
+}
 @end

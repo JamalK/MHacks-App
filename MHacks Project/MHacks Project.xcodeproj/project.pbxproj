@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D28E30A59D883DD0C5C0D33 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F35F9030853CED57C0FFCC9 /* libPods.a */; };
 		890DAFD01A6A262B0003D775 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 890DAFCF1A6A262B0003D775 /* LoginViewController.m */; };
 		890DAFD31A6A26B40003D775 /* BorderedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890DAFD21A6A26B40003D775 /* BorderedButton.swift */; };
 		890DAFD61A6A2A1E0003D775 /* LoginFieldViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 890DAFD51A6A2A1E0003D775 /* LoginFieldViewController.m */; };
@@ -25,6 +26,16 @@
 		890DAFF01A6A2E120003D775 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 890DAFEF1A6A2E120003D775 /* libsqlite3.dylib */; };
 		890DAFF41A6A2EE80003D775 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 890DAFF31A6A2EE80003D775 /* User.m */; };
 		890DAFF71A6A32AC0003D775 /* ChallengesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 890DAFF61A6A32AC0003D775 /* ChallengesTableViewController.m */; };
+		890DAFF91A6A429D0003D775 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 890DAFF81A6A429D0003D775 /* Social.framework */; };
+		890DAFFB1A6A42A40003D775 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 890DAFFA1A6A42A40003D775 /* Accounts.framework */; };
+		890DB0031A6A63D00003D775 /* LocationDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 890DB0021A6A63D00003D775 /* LocationDelegate.m */; };
+		890DB00A1A6A65730003D775 /* MapCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 890DB0081A6A65730003D775 /* MapCell.m */; };
+		890DB00B1A6A65730003D775 /* MapCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 890DB0091A6A65730003D775 /* MapCell.xib */; };
+		890DB00D1A6A669B0003D775 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 890DB00C1A6A669B0003D775 /* MapKit.framework */; };
+		890DB0111A6A66D60003D775 /* DetailsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 890DB00F1A6A66D60003D775 /* DetailsCell.m */; };
+		890DB0121A6A66D60003D775 /* DetailsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 890DB0101A6A66D60003D775 /* DetailsCell.xib */; };
+		890DB0161A6A6ABD0003D775 /* ContactCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 890DB0141A6A6ABD0003D775 /* ContactCell.m */; };
+		890DB0171A6A6ABD0003D775 /* ContactCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 890DB0151A6A6ABD0003D775 /* ContactCell.xib */; };
 		8911EC831A69F8F00044530F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8911EC821A69F8F00044530F /* main.m */; };
 		8911EC861A69F8F00044530F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8911EC851A69F8F00044530F /* AppDelegate.m */; };
 		8911EC891A69F8F00044530F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8911EC881A69F8F00044530F /* ViewController.m */; };
@@ -42,6 +53,11 @@
 		8911ECBC1A6A01CA0044530F /* OrganizationDetailTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8911ECBB1A6A01CA0044530F /* OrganizationDetailTableViewController.m */; };
 		8911ECC31A6A089A0044530F /* ChallengeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8911ECC11A6A089A0044530F /* ChallengeCell.m */; };
 		8911ECC41A6A089A0044530F /* ChallengeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8911ECC21A6A089A0044530F /* ChallengeCell.xib */; };
+		89AFE3D31A6A910600832877 /* CLLocation+CLLLocation_Address.m in Sources */ = {isa = PBXBuildFile; fileRef = 89AFE3D21A6A910600832877 /* CLLocation+CLLLocation_Address.m */; };
+		89AFE3D61A6AD70100832877 /* DiscoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89AFE3D51A6AD70100832877 /* DiscoverViewController.m */; };
+		89AFE3DD1A6AE2D000832877 /* UserInfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 89AFE3DB1A6AE2D000832877 /* UserInfoCell.m */; };
+		89AFE3DE1A6AE2D000832877 /* UserInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89AFE3DC1A6AE2D000832877 /* UserInfoCell.xib */; };
+		89AFE3E11A6B32BE00832877 /* ProfileTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89AFE3E01A6B32BE00832877 /* ProfileTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +71,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7AEA1DA515CC9C45A592410E /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "../Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		890DAFCD1A6A0AB80003D775 /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		890DAFCE1A6A262B0003D775 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		890DAFCF1A6A262B0003D775 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
@@ -79,7 +96,21 @@
 		890DAFF31A6A2EE80003D775 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
 		890DAFF51A6A32AC0003D775 /* ChallengesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChallengesTableViewController.h; sourceTree = "<group>"; };
 		890DAFF61A6A32AC0003D775 /* ChallengesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChallengesTableViewController.m; sourceTree = "<group>"; };
-		8911EC7D1A69F8F00044530F /* MHacks Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MHacks Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		890DAFF81A6A429D0003D775 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		890DAFFA1A6A42A40003D775 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		890DB0011A6A63D00003D775 /* LocationDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationDelegate.h; sourceTree = "<group>"; };
+		890DB0021A6A63D00003D775 /* LocationDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationDelegate.m; sourceTree = "<group>"; };
+		890DB0071A6A65730003D775 /* MapCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapCell.h; sourceTree = "<group>"; };
+		890DB0081A6A65730003D775 /* MapCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapCell.m; sourceTree = "<group>"; };
+		890DB0091A6A65730003D775 /* MapCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MapCell.xib; sourceTree = "<group>"; };
+		890DB00C1A6A669B0003D775 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		890DB00E1A6A66D60003D775 /* DetailsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailsCell.h; sourceTree = "<group>"; };
+		890DB00F1A6A66D60003D775 /* DetailsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailsCell.m; sourceTree = "<group>"; };
+		890DB0101A6A66D60003D775 /* DetailsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailsCell.xib; sourceTree = "<group>"; };
+		890DB0131A6A6ABD0003D775 /* ContactCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactCell.h; sourceTree = "<group>"; };
+		890DB0141A6A6ABD0003D775 /* ContactCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactCell.m; sourceTree = "<group>"; };
+		890DB0151A6A6ABD0003D775 /* ContactCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContactCell.xib; sourceTree = "<group>"; };
+		8911EC7D1A69F8F00044530F /* Volunteriffy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Volunteriffy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8911EC811A69F8F00044530F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8911EC821A69F8F00044530F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8911EC841A69F8F00044530F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -109,6 +140,17 @@
 		8911ECC01A6A089A0044530F /* ChallengeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChallengeCell.h; sourceTree = "<group>"; };
 		8911ECC11A6A089A0044530F /* ChallengeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChallengeCell.m; sourceTree = "<group>"; };
 		8911ECC21A6A089A0044530F /* ChallengeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChallengeCell.xib; sourceTree = "<group>"; };
+		89AFE3D11A6A910600832877 /* CLLocation+CLLLocation_Address.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CLLocation+CLLLocation_Address.h"; sourceTree = "<group>"; };
+		89AFE3D21A6A910600832877 /* CLLocation+CLLLocation_Address.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CLLocation+CLLLocation_Address.m"; sourceTree = "<group>"; };
+		89AFE3D41A6AD70100832877 /* DiscoverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscoverViewController.h; sourceTree = "<group>"; };
+		89AFE3D51A6AD70100832877 /* DiscoverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscoverViewController.m; sourceTree = "<group>"; };
+		89AFE3DA1A6AE2D000832877 /* UserInfoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInfoCell.h; sourceTree = "<group>"; };
+		89AFE3DB1A6AE2D000832877 /* UserInfoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserInfoCell.m; sourceTree = "<group>"; };
+		89AFE3DC1A6AE2D000832877 /* UserInfoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserInfoCell.xib; sourceTree = "<group>"; };
+		89AFE3DF1A6B32BE00832877 /* ProfileTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileTableViewController.h; sourceTree = "<group>"; };
+		89AFE3E01A6B32BE00832877 /* ProfileTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileTableViewController.m; sourceTree = "<group>"; };
+		923CD310BBBDD733C5BF5406 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "../Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		9F35F9030853CED57C0FFCC9 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +158,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				890DB00D1A6A669B0003D775 /* MapKit.framework in Frameworks */,
+				890DAFFB1A6A42A40003D775 /* Accounts.framework in Frameworks */,
+				890DAFF91A6A429D0003D775 /* Social.framework in Frameworks */,
 				890DAFF01A6A2E120003D775 /* libsqlite3.dylib in Frameworks */,
 				890DAFEE1A6A2E060003D775 /* libz.dylib in Frameworks */,
 				890DAFEC1A6A2DFD0003D775 /* SystemConfiguration.framework in Frameworks */,
@@ -131,6 +176,7 @@
 				890DAFDC1A6A2D6F0003D775 /* ParseUI.framework in Frameworks */,
 				890DAFDB1A6A2D6F0003D775 /* Parse.framework in Frameworks */,
 				8911ECAD1A69FC080044530F /* CoreLocation.framework in Frameworks */,
+				3D28E30A59D883DD0C5C0D33 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,9 +190,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0FBF2E17704B62F8B1BA3BF4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				923CD310BBBDD733C5BF5406 /* Pods.debug.xcconfig */,
+				7AEA1DA515CC9C45A592410E /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		890DAFF11A6A2E1A0003D775 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				890DB00C1A6A669B0003D775 /* MapKit.framework */,
+				890DAFFA1A6A42A40003D775 /* Accounts.framework */,
+				890DAFF81A6A429D0003D775 /* Social.framework */,
 				890DAFEF1A6A2E120003D775 /* libsqlite3.dylib */,
 				890DAFED1A6A2E060003D775 /* libz.dylib */,
 				890DAFEB1A6A2DFD0003D775 /* SystemConfiguration.framework */,
@@ -162,6 +220,7 @@
 				890DAFD91A6A2D6F0003D775 /* ParseUI.framework */,
 				8911ECAE1A69FC100044530F /* GameKit.framework */,
 				8911ECAC1A69FC080044530F /* CoreLocation.framework */,
+				9F35F9030853CED57C0FFCC9 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -173,13 +232,14 @@
 				8911EC7F1A69F8F00044530F /* MHacks Project */,
 				8911EC991A69F8F00044530F /* MHacks ProjectTests */,
 				8911EC7E1A69F8F00044530F /* Products */,
+				0FBF2E17704B62F8B1BA3BF4 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
 		8911EC7E1A69F8F00044530F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8911EC7D1A69F8F00044530F /* MHacks Project.app */,
+				8911EC7D1A69F8F00044530F /* Volunteriffy.app */,
 				8911EC961A69F8F00044530F /* MHacks ProjectTests.xctest */,
 			);
 			name = Products;
@@ -197,6 +257,8 @@
 				8911EC8A1A69F8F00044530F /* Main.storyboard */,
 				890DAFF51A6A32AC0003D775 /* ChallengesTableViewController.h */,
 				890DAFF61A6A32AC0003D775 /* ChallengesTableViewController.m */,
+				89AFE3D41A6AD70100832877 /* DiscoverViewController.h */,
+				89AFE3D51A6AD70100832877 /* DiscoverViewController.m */,
 				890DAFD41A6A2A1E0003D775 /* LoginFieldViewController.h */,
 				890DAFD51A6A2A1E0003D775 /* LoginFieldViewController.m */,
 				890DAFD21A6A26B40003D775 /* BorderedButton.swift */,
@@ -208,6 +270,8 @@
 				8911ECA71A69FB4B0044530F /* ChallengesBaseTableViewController.m */,
 				8911ECB71A6A00040044530F /* ChallengeDetailTableViewController.h */,
 				8911ECB81A6A00040044530F /* ChallengeDetailTableViewController.m */,
+				89AFE3DF1A6B32BE00832877 /* ProfileTableViewController.h */,
+				89AFE3E01A6B32BE00832877 /* ProfileTableViewController.m */,
 				8911ECB31A69FD330044530F /* Model */,
 				8911EC8D1A69F8F00044530F /* Images.xcassets */,
 				8911EC8F1A69F8F00044530F /* LaunchScreen.xib */,
@@ -246,6 +310,8 @@
 		8911ECB31A69FD330044530F /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				890DB0011A6A63D00003D775 /* LocationDelegate.h */,
+				890DB0021A6A63D00003D775 /* LocationDelegate.m */,
 				890DAFF21A6A2EE80003D775 /* User.h */,
 				890DAFF31A6A2EE80003D775 /* User.m */,
 				8911ECB41A69FE2B0044530F /* ContactPerson.h */,
@@ -261,6 +327,20 @@
 		8911ECC51A6A089E0044530F /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				89AFE3DA1A6AE2D000832877 /* UserInfoCell.h */,
+				89AFE3DB1A6AE2D000832877 /* UserInfoCell.m */,
+				89AFE3DC1A6AE2D000832877 /* UserInfoCell.xib */,
+				890DB0131A6A6ABD0003D775 /* ContactCell.h */,
+				890DB0141A6A6ABD0003D775 /* ContactCell.m */,
+				890DB0151A6A6ABD0003D775 /* ContactCell.xib */,
+				890DB0071A6A65730003D775 /* MapCell.h */,
+				890DB0081A6A65730003D775 /* MapCell.m */,
+				890DB0091A6A65730003D775 /* MapCell.xib */,
+				890DB00E1A6A66D60003D775 /* DetailsCell.h */,
+				890DB00F1A6A66D60003D775 /* DetailsCell.m */,
+				890DB0101A6A66D60003D775 /* DetailsCell.xib */,
+				89AFE3D11A6A910600832877 /* CLLocation+CLLLocation_Address.h */,
+				89AFE3D21A6A910600832877 /* CLLocation+CLLLocation_Address.m */,
 				8911ECC01A6A089A0044530F /* ChallengeCell.h */,
 				8911ECC11A6A089A0044530F /* ChallengeCell.m */,
 				8911ECC21A6A089A0044530F /* ChallengeCell.xib */,
@@ -271,21 +351,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		8911EC7C1A69F8F00044530F /* MHacks Project */ = {
+		8911EC7C1A69F8F00044530F /* Volunteriffy */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8911ECA01A69F8F00044530F /* Build configuration list for PBXNativeTarget "MHacks Project" */;
+			buildConfigurationList = 8911ECA01A69F8F00044530F /* Build configuration list for PBXNativeTarget "Volunteriffy" */;
 			buildPhases = (
+				6E94C4EFDC14D6B3502318B1 /* Check Pods Manifest.lock */,
 				8911EC791A69F8F00044530F /* Sources */,
 				8911EC7A1A69F8F00044530F /* Frameworks */,
 				8911EC7B1A69F8F00044530F /* Resources */,
+				EFF5AB5D7E2839A7946C2CF3 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "MHacks Project";
+			name = Volunteriffy;
 			productName = "MHacks Project";
-			productReference = 8911EC7D1A69F8F00044530F /* MHacks Project.app */;
+			productReference = 8911EC7D1A69F8F00044530F /* Volunteriffy.app */;
 			productType = "com.apple.product-type.application";
 		};
 		8911EC951A69F8F00044530F /* MHacks ProjectTests */ = {
@@ -317,6 +399,15 @@
 				TargetAttributes = {
 					8911EC7C1A69F8F00044530F = {
 						CreatedOnToolsVersion = 6.1;
+						DevelopmentTeam = M8E6CKJW86;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 0;
+							};
+							com.apple.Maps.iOS = {
+								enabled = 0;
+							};
+						};
 					};
 					8911EC951A69F8F00044530F = {
 						CreatedOnToolsVersion = 6.1;
@@ -337,7 +428,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8911EC7C1A69F8F00044530F /* MHacks Project */,
+				8911EC7C1A69F8F00044530F /* Volunteriffy */,
 				8911EC951A69F8F00044530F /* MHacks ProjectTests */,
 			);
 		};
@@ -352,6 +443,10 @@
 				8911ECC41A6A089A0044530F /* ChallengeCell.xib in Resources */,
 				8911EC911A69F8F00044530F /* LaunchScreen.xib in Resources */,
 				8911EC8E1A69F8F00044530F /* Images.xcassets in Resources */,
+				89AFE3DE1A6AE2D000832877 /* UserInfoCell.xib in Resources */,
+				890DB0121A6A66D60003D775 /* DetailsCell.xib in Resources */,
+				890DB00B1A6A65730003D775 /* MapCell.xib in Resources */,
+				890DB0171A6A6ABD0003D775 /* ContactCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,22 +459,63 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6E94C4EFDC14D6B3502318B1 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		EFF5AB5D7E2839A7946C2CF3 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8911EC791A69F8F00044530F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				8911ECBC1A6A01CA0044530F /* OrganizationDetailTableViewController.m in Sources */,
+				890DB0031A6A63D00003D775 /* LocationDelegate.m in Sources */,
 				890DAFF71A6A32AC0003D775 /* ChallengesTableViewController.m in Sources */,
 				8911ECC31A6A089A0044530F /* ChallengeCell.m in Sources */,
 				890DAFD31A6A26B40003D775 /* BorderedButton.swift in Sources */,
+				89AFE3E11A6B32BE00832877 /* ProfileTableViewController.m in Sources */,
 				8911ECB21A69FD260044530F /* Organization.m in Sources */,
+				89AFE3DD1A6AE2D000832877 /* UserInfoCell.m in Sources */,
 				8911EC891A69F8F00044530F /* ViewController.m in Sources */,
+				890DB0161A6A6ABD0003D775 /* ContactCell.m in Sources */,
 				8911ECAB1A69FB5B0044530F /* Challenge.m in Sources */,
+				890DB0111A6A66D60003D775 /* DetailsCell.m in Sources */,
+				890DB00A1A6A65730003D775 /* MapCell.m in Sources */,
 				8911EC861A69F8F00044530F /* AppDelegate.m in Sources */,
 				890DAFD61A6A2A1E0003D775 /* LoginFieldViewController.m in Sources */,
 				890DAFF41A6A2EE80003D775 /* User.m in Sources */,
+				89AFE3D31A6A910600832877 /* CLLocation+CLLLocation_Address.m in Sources */,
 				8911ECB91A6A00040044530F /* ChallengeDetailTableViewController.m in Sources */,
+				89AFE3D61A6AD70100832877 /* DiscoverViewController.m in Sources */,
 				8911ECA81A69FB4B0044530F /* ChallengesBaseTableViewController.m in Sources */,
 				8911EC831A69F8F00044530F /* main.m in Sources */,
 				890DAFD01A6A262B0003D775 /* LoginViewController.m in Sources */,
@@ -400,7 +536,7 @@
 /* Begin PBXTargetDependency section */
 		8911EC981A69F8F00044530F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 8911EC7C1A69F8F00044530F /* MHacks Project */;
+			target = 8911EC7C1A69F8F00044530F /* Volunteriffy */;
 			targetProxy = 8911EC971A69F8F00044530F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -503,9 +639,12 @@
 		};
 		8911ECA11A69F8F00044530F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 923CD310BBBDD733C5BF5406 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -513,6 +652,7 @@
 				INFOPLIST_FILE = "MHacks Project/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "MHacks Project/MHacks Project-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -520,9 +660,12 @@
 		};
 		8911ECA21A69F8F00044530F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7AEA1DA515CC9C45A592410E /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -530,6 +673,7 @@
 				INFOPLIST_FILE = "MHacks Project/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "MHacks Project/MHacks Project-Bridging-Header.h";
 			};
 			name = Release;
@@ -580,7 +724,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8911ECA01A69F8F00044530F /* Build configuration list for PBXNativeTarget "MHacks Project" */ = {
+		8911ECA01A69F8F00044530F /* Build configuration list for PBXNativeTarget "Volunteriffy" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8911ECA11A69F8F00044530F /* Debug */,

@@ -7,8 +7,18 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Challenge.h"
 
 
 @interface ChallengeDetailTableViewController : UITableViewController
+
+
+-(instancetype)initWithChallenge:(Challenge *)challenge ;
+
+@property (strong, nonatomic) Challenge *challenge ;
+@property (weak, nonatomic) UIBarButtonItem *subscribeButtonTapped;
+
+
+
 
 @end

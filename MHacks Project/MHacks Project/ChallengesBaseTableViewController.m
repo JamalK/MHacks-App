@@ -8,6 +8,7 @@
 
 #import "ChallengesBaseTableViewController.h"
 #import "ChallengeCell.h"
+#import "LocationDelegate.h"
 
 @interface ChallengesBaseTableViewController ()
 
@@ -27,7 +28,19 @@
 
 -(void)configureCell:(ChallengeCell *)cell WithChallenge:(Challenge *)challenge {
     cell.mainLabel.text = challenge.title ;
-    cell.detailLabel.text = challenge.details ;
+    cell.detailLabel.text = challenge.detailLabel ;
+    [cell setLimitLabelWith:challenge.volunteers limit:challenge.limit];
+    cell.logoView.file = challenge.organizer.logo ;
+    CLLocationDistance distance = [[[CLLocation alloc] initWithLatitude:challenge.location.latitude longitude:challenge.location.longitude] distanceFromLocation:[LocationDelegate sharedManager].currentLocation];
+    cell.distanceLabel.text = [NSString stringWithFormat:@"%.2f km",distance/1000];
+    [cell.logoView loadInBackground];
+    
+    
+}
+
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
 - (void)didReceiveMemoryWarning {

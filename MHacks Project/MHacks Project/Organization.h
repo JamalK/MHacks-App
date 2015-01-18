@@ -13,7 +13,7 @@
 @interface Organization : PFObject <PFSubclassing>
 
 @property (nonatomic, strong) NSString *name ;
-@property (nonatomic, strong) UIImage  *logo ;
+@property (nonatomic, strong) PFFile   *logo ;
 @property (nonatomic, strong) NSString *mission ;
 @property (nonatomic, strong) NSString *address ;
 

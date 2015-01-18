@@ -18,13 +18,15 @@
 @property (nonatomic, strong) NSString      *title     ;
 @property (nonatomic, strong) NSNumber      *limit     ;
 @property (nonatomic, strong) NSString      *details   ;
-@property (nonatomic, strong) CLLocation    *location  ;
+@property (nonatomic, strong) PFGeoPoint    *location  ;
 @property (nonatomic, strong) NSDate        *date      ;
 @property (nonatomic, strong) ContactPerson *leader    ;
 @property (nonatomic, strong) Organization  *organizer ;
 @property (nonatomic, assign) BOOL          completed  ;
 @property (nonatomic, strong) NSNumber      *worth     ;
+@property (nonatomic, strong) NSNumber      *volunteers;
 
+- (NSString *)detailLabel ;
 
 
 

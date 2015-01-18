@@ -10,6 +10,6 @@
 
 @implementation User
 
-@dynamic points ;
+@dynamic points, name, avatar ;
 
 @end

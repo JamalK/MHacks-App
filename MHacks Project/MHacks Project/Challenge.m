@@ -7,13 +7,18 @@
 //
 
 #import "Challenge.h"
-
+#import <DateTools.h>
 @implementation Challenge
 
-@dynamic title,leader,location,date,completed, worth, limit,  details,organizer ;
+@dynamic title,leader,location,date,completed, worth, limit,  details,organizer,volunteers ;
 
-+(NSString *)parseClassName {
++ (NSString *)parseClassName {
     return @"Challenge" ;
+}
+
+
+- (NSString *)detailLabel {
+    return [NSString stringWithFormat:@"%@",self.date.timeAgoSinceNow];
 }
 
 @end

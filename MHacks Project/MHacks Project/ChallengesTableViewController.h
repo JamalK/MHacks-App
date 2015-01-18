@@ -8,7 +8,14 @@
 
 #import <UIKit/UIKit.h>
 #import "ChallengesBaseTableViewController.h"
+#import "LocationDelegate.h"
 
-@interface ChallengesTableViewController : ChallengesBaseTableViewController
+@interface ChallengesTableViewController : ChallengesBaseTableViewController <CurrentLocationDelegate>
+
+@property (strong, nonatomic) CLLocation *currentLocation ;
+@property (strong, nonatomic) CLLocationManager *locationManager  ;
+
+-(void)authenticateLocalPlayer;
+
 
 @end

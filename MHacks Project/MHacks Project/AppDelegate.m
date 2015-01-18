@@ -12,6 +12,7 @@
 #import "ContactPerson.h"
 #import "Organization.h"
 #import "Challenge.h"
+#import "LocationDelegate.h"
 
 @interface AppDelegate ()
 

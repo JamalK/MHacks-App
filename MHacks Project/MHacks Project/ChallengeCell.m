@@ -20,4 +20,14 @@
     // Configure the view for the selected state
 }
 
+- (void)setLimitLabelWith:(NSNumber *)attendees limit:(NSNumber *)limit {
+    self.limitLabel.text = [NSString stringWithFormat:@"%@/%@",attendees,limit];
+}
+
+
+
+
+
+
+
 @end

@@ -11,6 +11,9 @@
 @interface User : PFUser <PFSubclassing>
 
 @property (nonatomic, strong) NSNumber *points ;
+@property (nonatomic, strong) NSString *name ;
+@property (nonatomic, strong) PFFile   *avatar ;
+
 
 
 @end

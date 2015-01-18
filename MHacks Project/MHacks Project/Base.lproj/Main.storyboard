@@ -20,7 +20,7 @@
                             <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ME8-CU-9BI">
                                 <rect key="frame" x="158" y="168" width="284" height="183"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RRe-Cm-fdO" customClass="UIBorderedButton" customModule="MHacks_Project" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RRe-Cm-fdO" customClass="UIBorderedButton" customModule="Volunteriffy" customModuleProvider="target">
                                         <rect key="frame" x="20" y="20" width="244" height="49"/>
                                         <color key="backgroundColor" red="0.4745098352432251" green="0.46274513006210327" blue="0.89803928136825562" alpha="1" colorSpace="deviceRGB"/>
                                         <constraints>
@@ -48,7 +48,7 @@
                                             <segue destination="iVk-k0-dNd" kind="show" id="ZjG-Hm-OIC"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zPH-uT-vMv" customClass="UIBorderedButton" customModule="MHacks_Project" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zPH-uT-vMv" customClass="UIBorderedButton" customModule="Volunteriffy" customModuleProvider="target">
                                         <rect key="frame" x="20" y="114" width="244" height="49"/>
                                         <color key="backgroundColor" red="0.22745099663734436" green="0.92941182851791382" blue="0.67450982332229614" alpha="0.67000000000000004" colorSpace="deviceRGB"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="21"/>
@@ -108,7 +108,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T9E-Xq-XfT">
                                 <rect key="frame" x="122" y="111" width="356" height="226"/>
                                 <subviews>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Username" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UE7-kd-L92" customClass="JKCustomTextField" customModule="MHacks_Project" customModuleProvider="target">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Username" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UE7-kd-L92" customClass="JKCustomTextField" customModule="Volunteriffy" customModuleProvider="target">
                                         <rect key="frame" x="20" y="20" width="316" height="40"/>
                                         <color key="backgroundColor" red="0.99215692281723022" green="0.9960784912109375" blue="0.9960784912109375" alpha="0.48999999999999999" colorSpace="deviceRGB"/>
                                         <color key="textColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
@@ -129,7 +129,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ko6-xI-uF2" customClass="UIBorderedButton" customModule="MHacks_Project" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ko6-xI-uF2" customClass="UIBorderedButton" customModule="Volunteriffy" customModuleProvider="target">
                                         <rect key="frame" x="56" y="157" width="244" height="49"/>
                                         <color key="backgroundColor" red="0.22745099660000001" green="0.92941182850000004" blue="0.67450982329999998" alpha="0.67000000000000004" colorSpace="deviceRGB"/>
                                         <constraints>
@@ -156,7 +156,7 @@
                                             <action selector="loginButtonTapped:" destination="iVk-k0-dNd" eventType="touchUpInside" id="71B-ac-5kz"/>
                                         </connections>
                                     </button>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gRJ-HE-xC3" customClass="JKCustomTextField" customModule="MHacks_Project" customModuleProvider="target">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gRJ-HE-xC3" customClass="JKCustomTextField" customModule="Volunteriffy" customModuleProvider="target">
                                         <rect key="frame" x="20" y="80" width="316" height="40"/>
                                         <color key="backgroundColor" red="0.99215692280000001" green="0.99607849120000003" blue="0.99607849120000003" alpha="0.48999999999999999" colorSpace="deviceRGB"/>
                                         <color key="textColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
@@ -242,28 +242,37 @@
             </objects>
             <point key="canvasLocation" x="-344" y="462"/>
         </scene>
-        <!--Root View Controller-->
+        <!--Discover View Controller-->
         <scene sceneID="v1p-Ka-VTN">
             <objects>
-                <tableViewController id="PTe-Sk-FGa" sceneMemberID="viewController">
+                <tableViewController id="PTe-Sk-FGa" customClass="DiscoverViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="Qur-iN-zFH">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="zYC-pU-HVV">
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zYC-pU-HVV" id="GWU-4E-gXC">
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
                         <connections>
                             <outlet property="dataSource" destination="PTe-Sk-FGa" id="ppD-Ux-QbQ"/>
                             <outlet property="delegate" destination="PTe-Sk-FGa" id="N12-90-Xon"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="uMH-nU-0ts"/>
+                    <navigationItem key="navigationItem" id="uMH-nU-0ts">
+                        <nil key="title"/>
+                        <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="bg1-j9-zyL">
+                            <rect key="frame" x="180" y="7" width="240" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <segments>
+                                <segment title="Organizations"/>
+                                <segment title="People"/>
+                            </segments>
+                            <color key="tintColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="segmentedControlChangedValue:" destination="PTe-Sk-FGa" eventType="valueChanged" id="nxi-Bp-Lhd"/>
+                            </connections>
+                        </segmentedControl>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="segmentedControl" destination="bg1-j9-zyL" id="6nB-Rx-14y"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8f7-lO-Stf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -277,6 +286,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Qsj-DV-MQe">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.0294668355" green="0.74665889279999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
                     <connections>
                         <segue destination="PTe-Sk-FGa" kind="relationship" relationship="rootViewController" id="FnK-Y5-pHX"/>
@@ -286,28 +296,20 @@
             </objects>
             <point key="canvasLocation" x="382" y="442"/>
         </scene>
-        <!--Root View Controller-->
+        <!--Profile-->
         <scene sceneID="hpf-pQ-wxa">
             <objects>
-                <tableViewController id="QtJ-E8-FBN" sceneMemberID="viewController">
+                <tableViewController id="QtJ-E8-FBN" customClass="ProfileTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="hDe-8G-0Ux">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="wqu-bo-9J0">
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wqu-bo-9J0" id="K9a-ER-Hg4">
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
                         <connections>
                             <outlet property="dataSource" destination="QtJ-E8-FBN" id="9mB-lv-hQj"/>
                             <outlet property="delegate" destination="QtJ-E8-FBN" id="pcN-Ag-CTs"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="Zal-tI-MmF"/>
+                    <navigationItem key="navigationItem" title="Profile" id="Zal-tI-MmF"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aJu-2t-Qd2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -318,9 +320,10 @@
             <objects>
                 <navigationController id="ica-j3-RVh" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="gLG-jR-1Ys"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="jGx-F1-mW4">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="jGx-F1-mW4">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.0294668355" green="0.74665889279999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
                     <connections>
                         <segue destination="QtJ-E8-FBN" kind="relationship" relationship="rootViewController" id="1CB-lM-vbM"/>

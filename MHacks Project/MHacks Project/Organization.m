@@ -12,7 +12,7 @@
 
 @dynamic name,logo,mission, address ;
 
-+(NSString *)parseClassName {
++ (NSString *)parseClassName {
     return @"Organization" ;
 }
 
