@@ -58,8 +58,17 @@
     
     [GKAchievement reportAchievements:achievements withCompletionHandler:^(NSError *error) {
         if (!error) {
-            [[[UIAlertView alloc]initWithTitle:@"Success!" message:@"You just earned 10 points!" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil]show ];
-            [self.navigationController popViewControllerAnimated:YES];
+            GKScore *score = [[GKScore alloc] initWithLeaderboardIdentifier:@"leaderboard7"];
+            score.value = 10 ;
+            
+            [GKScore reportScores:@[score] withCompletionHandler:^(NSError *error) {
+                if (error != nil) {
+                    [[[UIAlertView alloc]initWithTitle:@"Success!" message:@"You just earned 10 points!" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil]show ];
+                    [self.navigationController popViewControllerAnimated:YES];
+                    NSLog(@"%@", [error localizedDescription]);
+                }
+            }];
+            
         }
         else {
             NSLog(@"error:%@",error.localizedDescription);

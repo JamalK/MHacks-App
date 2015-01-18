@@ -11,7 +11,7 @@
 #import <GameKit/GameKit.h>
 #import "Constants.h"
 
-@interface ProfileTableViewController ()
+@interface ProfileTableViewController () <GKGameCenterControllerDelegate>
 
 @end
 
@@ -63,6 +63,7 @@
         cell.nameLabel.text = _user.name ;
         cell.profileImage.file =  _user.avatar ;
         cell.usernameLabel.text = _user.username ;
+        
         cell.pointsLabel.text = [NSString stringWithFormat:@"%@ Points",_user.points] ;
         [cell.profileImage loadInBackground];
     }];
@@ -119,5 +120,21 @@
     // Pass the selected object to the new view controller.
 }
 */
+- (IBAction)leaderBoardTapped:(id)sender {
+    GKGameCenterViewController *gcViewController = [[GKGameCenterViewController alloc] init];
+    
+    gcViewController.gameCenterDelegate = self;
+    
 
+        gcViewController.viewState = GKGameCenterViewControllerStateLeaderboards;
+        gcViewController.leaderboardIdentifier = @"leaderboard7";
+    
+    
+    [self presentViewController:gcViewController animated:YES completion:nil];
+}
+
+-(void)gameCenterViewControllerDidFinish:(GKGameCenterViewController *)gameCenterViewController
+{
+    [gameCenterViewController dismissViewControllerAnimated:YES completion:nil];
+}
 @end

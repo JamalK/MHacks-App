@@ -25,11 +25,15 @@
 - (IBAction)segmentedControlChangedValue:(id)sender {
     if (self.segmentedControl.selectedSegmentIndex == 0) {
         organizations = YES ;
-        [self loadObjects];
+        [self objectsWillLoad];
+        [self  loadObjects];
+        [self objectsDidLoad:nil];
     }
     else {
         organizations = NO ;
+        [self objectsWillLoad];
         [self  loadObjects];
+        [self objectsDidLoad:nil];
     }
 }
 
@@ -92,13 +96,18 @@
         cell.detailLabel.hidden = YES ;
         cell.distanceLabel.hidden = YES ;
         cell.limitLabel.hidden = YES ;
+        [cell.logoView loadInBackground];
     }
     else {
         User *userAtIdx = self.objects[indexPath.row];
-        cell.mainLabel.text = userAtIdx.username ;
-        cell.detailLabel.text = [NSString stringWithFormat:@"%@ Points",userAtIdx.points];
-        cell.distanceLabel.hidden  = YES ;
-        cell.limitLabel.hidden = YES ;
+        [userAtIdx fetchInBackgroundWithBlock:^(PFObject *object, NSError *error) {
+            cell.mainLabel.text = userAtIdx.name ;
+            cell.detailLabel.text = [NSString stringWithFormat:@"%@ Points",userAtIdx.points];
+            cell.distanceLabel.hidden  = YES ;
+            cell.limitLabel.hidden = YES ;
+            cell.logoView.file = userAtIdx.avatar ;
+            [cell.logoView loadInBackground];
+        }];
     }
     return cell ;
 }
